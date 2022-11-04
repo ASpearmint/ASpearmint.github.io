@@ -39,7 +39,7 @@ function Cornify(page_value) {
 //Function for dynamic map selection
 function Page_Me(image, page) {
     image.remove(map);
-    let waldo_images = `~/FindMe/waldos_whereabouts/waldo${page}.jpg`;
+    let waldo_images = `/FindMe/waldos_whereabouts/waldo${page}.jpg`;
     let image2 = L.imageOverlay(waldo_images, bounds).addTo(map);
     return image2;
 }
@@ -57,7 +57,7 @@ c.setCoordinates(e);
 
 //Default map overlay behavior
 var number = 1;
-let waldo_images = `~/FindMe/waldos_whereabouts/waldo${number}.jpg`;
+let waldo_images = `/FindMe/waldos_whereabouts/waldo${number}.jpg`;
 map.fitBounds(bounds);
 let image = L.imageOverlay(waldo_images, bounds).addTo(map);
 marker = L.marker();
