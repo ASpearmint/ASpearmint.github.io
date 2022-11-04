@@ -1,0 +1,67 @@
+$body-background: #181a1b;
+$header-background: #343a40;
+$font-stack: Helvetica, sans-serif;
+
+//make scalable
+#map { height: 300px; margin-top:50px; position: relative;}
+
+.leaflet-control-coordinates {
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+.leaflet-control-coordinates.hidden {
+	display: none;
+}
+
+.leaflet-control-coordinates-lng {
+	padding-left: 5px;
+}
+
+.box {
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+body {
+	background: $body-background;
+}
+
+.hidden {
+	display: none;
+
+}
+
+img {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+
+.container { 
+	max-width: 54em;
+    padding: 0 6em 1.5em;
+    margin: auto;
+	margin-top: 1rem;
+
+	
+	hr, strong, p {
+		color: white;
+	}
+}
+
+button {
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	
+}
+
+//create seperate text css

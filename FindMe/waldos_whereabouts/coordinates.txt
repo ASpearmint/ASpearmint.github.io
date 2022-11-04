@@ -1,0 +1,27 @@
+Waldo1
+lat 154
+lon 167
+
+Waldo2
+Waldo isnt there, its actually funnier to not have it. 
+
+Waldo3
+lat 658
+lon 612
+
+lat 608
+lon 639
+
+Waldo4
+lat 159
+lon 125
+
+lat 138
+lon 137
+
+Waldo5
+lat 883
+lon 372
+
+lat 858
+lon 384
