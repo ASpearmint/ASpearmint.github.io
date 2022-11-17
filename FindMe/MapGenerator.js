@@ -63,7 +63,7 @@ let image = L.imageOverlay(waldo_images, bounds).addTo(map);
 marker = L.marker();
 
 
-$("li").on("click", (e)=> {
+$(".card").on("click", (e)=> {
     page = parseInt(e.target.id);
     Page_Me(image, page);
     $("#congration").hide();
