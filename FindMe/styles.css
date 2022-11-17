@@ -1,6 +1,6 @@
 #map {
   height: 300px;
-  margin-top: 50px;
+  margin-top: 25px;
   position: relative;
 }
 
@@ -20,14 +20,6 @@
   padding-left: 5px;
 }
 
-.box {
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
-  cursor: pointer;
-  padding: 2px 5px;
-}
-
 body {
   background: #181a1b;
 }
@@ -36,27 +28,161 @@ body {
   display: none;
 }
 
+html {
+  overflow-y: hidden;
+  height: 100%;
+}
+
 img {
   position: absolute;
+  width: 15%;
+  height: auto;
   bottom: 0px;
   right: 0px;
-  width: 15%;
-	height: 30%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  text-align: center !important;
+}
+footer p {
+  color: white;
+  font-size: small;
 }
 
 .container {
   max-width: 54em;
   padding: 0 6em 1.5em;
   margin: auto;
-  margin-top: 1rem;
 }
 .container hr, .container strong, .container p {
   color: white;
 }
 
 button {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 10px 10px 0 0;
+  background-color: #2b2f31;
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.containingCard {
+  display: flex;
+  margin-top: 1rem;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 4px;
+  width: 10vmin;
+  aspect-ratio: 7/5;
+}
+
+.card:nth-child(1) {
+  background-image: url("waldos_whereabouts/waldo1.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(2) {
+  background-image: url("waldos_whereabouts/waldo2.jpg");
+  background-color: blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(3) {
+  background-image: url("waldos_whereabouts/waldo3.jpg");
+  background-color: yellow;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(4) {
+  background-image: url("waldos_whereabouts/waldo4.jpg");
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(5) {
+  background-image: url("waldos_whereabouts/waldo5.jpg");
+  background-color: orange;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card:nth-child(1):hover, .card:nth-child(2):hover, .card:nth-child(3):hover, .card:nth-child(4):hover, .card:nth-child(5):hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(1deg);
+  }
+  25% {
+    -ms-transform: rotate(-1deg);
+  }
+  50% {
+    -ms-transform: rotate(1.5deg);
+  }
+  75% {
+    -ms-transform: rotate(-5deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
